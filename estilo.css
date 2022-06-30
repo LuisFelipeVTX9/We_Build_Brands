@@ -1,0 +1,485 @@
+/*https://nicepage.com/css-templates/preview/we-build-brands-20465?device=desktop
+	https://nicepage.com/css-templates/preview/pizza-online-88863?device=desktop*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100%; width: 100%;
+}
+#homepage{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(myimages/back1.jpg);
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	background-position: 50%, 50%;
+}
+#homepage .logo{
+	margin-bottom: 1.25rem;
+}
+.logo img{
+	width: 6.875rem; height: 6.5rem;
+}
+#homepage .title-box{
+	font-size: 4.5rem;
+	color: #fff;
+	font-family: Georgia, serif;
+}
+.linha-1{
+	height: 3px solid #fff;
+	background: #fff;
+	width: 18%;
+	margin-top: 1.5rem;
+	margin-bottom: 0.1rem;
+}
+#homepage .subtitle-box{
+	margin-top: 2.188rem;
+}
+.subtitle-box span{
+	font-size: 1.25rem;
+	color: #fff;
+	font-family: Open Sans, sans-serif;
+	letter-spacing: 0.065rem;
+}
+#about-us{
+	padding: 2.5rem 0 2.5rem 0;
+}
+#about-us{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#about-us .title-section{
+	padding: 1.5rem 3.5rem;
+	border-bottom: 3px solid #f15048;
+}
+.title-section h2{
+	font-size: 48px;
+	font-family: Georgia, serif;
+	font-weight: 400;
+}
+#about-us .paragraph{
+	text-align: center;
+	margin-top: 1.2rem;
+}
+.paragraph p{
+	font-family: Open Sans, sans-serif;
+	font-size: 1rem;
+	color: #000;
+}
+#about-us .grid-services{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem 1rem;
+	margin-top: 4rem;
+}
+.grid-services .card-service{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 1rem;
+	margin-left: 30px;
+}
+.card-service img{
+	width: 75px;
+	height: 75px;
+}
+.card-service h3{
+	font-family: Georgia, serif;
+	font-size: 24px;
+	font-weight: 400;
+	margin-top: 0.650rem;
+}
+.card-service span{
+	font-size: 14px;
+	color: gray;
+	font-family: Open Sans, sans-serif;
+	text-align: center;
+	margin-top: 1.2rem;
+}
+#projects{
+	background-color: #e3e3e3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2rem 0;
+}
+#projects .title-section{
+	padding: 1.5rem 3.5rem;
+	border-bottom: 3px solid #f15048;
+}
+.title-section h2{
+	font-size: 48px;
+	font-family: Georgia, serif;
+	font-weight: 400;
+}
+#projects .paragraph{
+	text-align: center;
+	margin-top: 1.2rem;
+}
+.paragraph p{
+	font-family: Open Sans, sans-serif;
+	font-size: 1rem;
+	color: #000;
+}
+.container-galeria{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	margin-top: 3rem;
+	margin-bottom: 2.5rem;
+}
+.item-galeria{
+	position: relative;
+}
+.item-galeria .img-galeria{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.h-1{
+	grid-row: span 1;
+	height: 320px;
+	width: 320px;
+}
+.h-2{
+	grid-row: span 2;
+	width: 320px;
+	height: 645px;
+}
+.w-1{
+	grid-column: span 1;
+}
+.w-2{
+	grid-column: span 2;
+}
+.txt-div{
+	padding: 1rem;
+	background: #f15048;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+	flex-direction: column;
+}
+.txt-div h4{
+	font-size: 24px;
+	font-family: Georgia, serif;
+	color: #fff;
+	margin-bottom: 1rem;
+	font-weight: 400;
+}
+.txt-div span{
+	font-size: 1rem;
+	color: #fff;
+	font-family: Open Sans, sans-serif;
+	line-height: 1.5;
+}
+.botao .btn{
+	background: #f15048;
+	border: none;
+	padding: 0.7rem 2rem;
+	color: #fff;
+	font-family: Open Sans, sans-serif;
+	font-size: 0.875rem;
+	letter-spacing: 1px;
+	margin-bottom: 1rem;
+}
+.botao .btn:hover{
+	transition: .4s;
+	background: rgb(239, 52, 43);
+	cursor: pointer;
+	color: rgb(204, 204, 204);
+}
+#members{
+	padding: 1rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#members .box-members{
+	display: flex;
+	gap: 75px;
+	padding: 2rem 0;
+}
+.box-members .person{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 1rem 2rem;
+}
+.person img{
+	width: 200px; height: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.person h5{
+	font-family: Georgia, sans-serif;
+	font-size: 1.25rem;
+	font-weight: 400;
+	margin-top: 2.25rem;
+}
+.person p{
+	font-size: 0.875rem;
+	font-family: Open Sans, sans-serif;
+	margin-top: 0.5rem;
+}
+#customers{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(myimages/back2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%, 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 1.5rem 0;
+}
+#customers .title-section2{
+	padding: 1rem;
+}
+#customers .title-section2 h2{
+	font-size: 48px;
+	font-family: Georgia, serif;
+	font-weight: 400;
+	color: #fff;
+	margin-top: 0.750rem;
+}
+#customers .text-section{
+	padding: 1rem;
+}
+#customers .text-section p{
+	color: #fff;
+	font-size: 1rem;
+	font-family: Open Sans, sans-serif;
+	line-height: 1.5;
+	text-align: center;
+}
+#customers .builds{
+	margin-top: 0.750rem;
+	display: flex;
+	gap: 100px;
+}
+.builds .item-build img{
+	width: 140px;
+	height: 75px;
+	object-fit: contain;
+}
+#featured{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+#featured .box-featured{
+	width: 100%;
+	padding: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box-featured .left-box{
+	width: 38%;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+	flex-direction: column;
+	height: 400px;
+}
+.left-box h1{
+	font-family: Georgia, serif;
+	font-weight: 400;
+	font-size: 3rem;
+	padding: 1rem 0rem;
+}
+.left-box hr{
+	width: 57%;
+	height: 3px;
+	background-color: #f15048;
+	border: 1px solid #f15048;
+}
+.left-box span{
+	margin-top: 1.2rem;
+	font-family: Open Sans, sans-serif;
+	color: #000;
+	line-height: 1.5;
+	font-size: 1rem;
+}
+.left-box .btn-2{
+	background: #f15048;
+	border: none;
+	padding: 0.7rem 2rem;
+	color: #fff;
+	font-family: Open Sans, sans-serif;
+	font-size: 0.875rem;
+	letter-spacing: 1px;
+	margin-top: 1.2rem;
+	width: 28%;
+}
+.left-box .btn-2:hover{
+	transition: .4s;
+	background: rgb(239, 52, 43);
+	cursor: pointer;
+	color: rgb(204, 204, 204);
+}
+.right-box{
+	width: 40%;
+	display: flex;
+}
+.right-box .image{
+	width: 100%; height: 100%;
+	background-image: url(myimages/featured.jpg);
+	background-size: cover;
+	background-position: 50%, 50%;
+	height: 400px;
+}
+#contact{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #e3e3e3;
+}
+#contact h1{
+	font-family: Georgia, serif;
+	font-size: 3rem;
+	margin-top: 2.5rem;
+	font-weight: 400;
+}
+#contact p{
+	font-size: 1rem;
+	line-height: 1.5;
+	font-family: Open Sans, sans-serif;
+	margin-top: 1rem;
+	text-align: center;
+}
+#contact .form-box{
+	display: flex;
+	margin-top: 2.5rem;
+	margin-bottom: 3rem;
+}
+.form-box .contact-us{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
+}
+.contact-us h6{
+	font-family: Georgia, serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+.contact-us span{
+	margin-top: 1rem;
+	font-size: 1rem;
+	font-family: Open Sans, sans-serif;
+	line-height: 1.5;
+}
+.contact-us .icons-media{
+	display: flex;
+	margin-top: 1rem;
+}
+.icons-media img{
+	width: 25px;
+	height: 25px;
+	margin-right: 25px;
+}
+.form{
+	padding: 0rem 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: right;
+	flex-direction: column;
+}
+.form input{
+	height: 45px;
+	background: #fff;
+	width: 500px;
+	border: none;
+	border-radius: 5px;
+	padding: 1rem;
+	font-size: 1rem;
+	color: #292929;
+	font-family: Open Sans, sans-serif;
+	margin-bottom: 0.850rem;
+}
+.form input, textarea::placeholder{
+	color: gray;
+	font-family: Open Sans, sans-serif;
+	font-size: 1rem;
+}
+.form textarea{
+	width: 500px;
+	background: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 1rem;
+	font-size: 1rem;
+	color: #292929;
+	font-family: Open Sans, sans-serif;
+	height: 120px;
+}
+.form button{
+	background: #f15048;
+	border: none;
+	padding: 0.5rem 1.5rem;
+	color: #fff;
+	font-family: Open Sans, sans-serif;
+	font-size: 0.875rem;
+	letter-spacing: 1px;
+	width: 25%;
+	margin-top: 1rem;
+}
+.form button:hover{
+	transition: .4s;
+	cursor: pointer;
+	background: rgb(239, 52, 43);
+	color: rgb(204, 204, 204);
+}
+footer{
+	background-color: #f15048;
+	padding: 2.5rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+footer h1{
+	color: #fff;
+	font-size: 3rem;
+	font-family: Georgia, serif;
+	font-weight: 400;
+}
+footer p{
+	font-family: Open Sans, sans-serif;
+	color: #fff;
+	font-size: 1rem;
+	margin-top: 1rem;
+	text-align: center;
+}
+footer button{
+	margin-top: 2rem;
+	background: rgb(227, 227, 227);
+	border: none;
+	padding: 0.7rem 3rem;
+	color: #000;
+	font-family: Open Sans, sans-serif;
+	font-size: 0.875rem;
+	letter-spacing: 1px;
+}
+footer button:hover{
+	transition: .4s;
+	cursor: pointer;
+	background: rgb(204, 204, 204);
+}
